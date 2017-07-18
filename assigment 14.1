@@ -1,0 +1,48 @@
+dev = c(2:30)
+
+dev <- c(30:2)
+
+dev <- c((1:28),2,1)
+
+dev = c(4,6,3)
+
+vtr4 = rep(c(5:7), time = 10)
+vtr = 5:7
+vtr5=c(rep(vtr,10),5)
+
+vtr6=c(rep(4,10),rep(6,20),rep(3,30))
+
+x=seq(3,6,by = 0.1)
+vtr7 = exp(x)*sin(x)
+
+set.seed(100)
+
+a <- sample(0:999 , 250 , replace = T)
+
+b <- sample(0:999 , 250 , replace = T)
+b
+#3.a
+b[which(b>500)]
+
+#3.b
+which(b>700)
+
+#3.c
+a[which(a>400)]==which(b>400)
+#3.d
+length(b>200)
+
+#3.e
+length(which(a%%2==0))
+
+#3.f
+sort(a)
+sort(b)
+
+#g
+vector=c("x1+2x2-x3","x2+2x3-x4","xn-2+2xn+1-xn")
+vector
+
+#h
+splsum=function(x){exp(x+10/x+10)}
+splsum(1:10)
